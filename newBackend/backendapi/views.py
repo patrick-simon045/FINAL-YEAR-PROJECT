@@ -555,15 +555,8 @@ def download_ca_report(request):
     # Sheet body, remaining rows
     font_style = xlwt.XFStyle()
 
-    rows = User.objects.all().values_list('username', 'first_name', 'last_name', 'email')
 
-    newRows = [
-        ("2017-26-02325", "Paulina", "kdkwnk", "paulin@mail.com"),
-        ("2017-26-02345", "Paul", "kdkwnk", "paulin@marfril.com"),
-        ("2017-26-02335", "xkmksd", "kdkwnk", "paulixasn@mail.com"),
-        ("2017-26-02315", "idejied", "kdkwnk", "paulidefgn@mail.com"),
-        ("2017-26-02365", "plpasa", "kdkwnk", "paulinaqsqw@mail.com"),
-    ]
+    
     
     # it works
     # ws.write(20, 2, xlwt.Formula("B1+B2"))
